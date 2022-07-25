@@ -1,0 +1,109 @@
+body {
+  background: hsl(30deg, 38%, 92%);
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.card {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px 15px 15px 15px;
+}
+.card img {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-title {
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(212deg, 21%, 14%);
+}
+
+.card-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.card-btn {
+  background: hsl(158deg, 36%, 37%);
+  border: 0;
+  transition: 0.2s;
+  width: 300px;
+  height: 45px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.card-btn:hover {
+  background: hsl(158deg, 36%, 30%);
+}
+
+.card-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(158deg, 36%, 37%);
+  font-size: 32px;
+}
+.card-price s {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
+.card-product-type {
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 6px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .card-body .card-text {
+    margin: 0;
+  }
+  .card {
+    width: 20rem;
+    min-height: 35rem;
+  }
+  .card img {
+    content: url("../img/image-product-mobile.jpg");
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 15px;
+  }
+  .card-product-type {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    max-width: 40rem;
+    max-height: 30rem;
+  }
+  .card img {
+    content: url("../img/image-product-desktop.jpg");
+    width: 40rem;
+    height: 30rem;
+  }
+}/*# sourceMappingURL=style.css.map */
