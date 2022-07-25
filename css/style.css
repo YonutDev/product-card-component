@@ -60,9 +60,9 @@ img {
 }
 .card-price s {
   color: hsl(228deg, 12%, 48%);
-  font-size: 16px;
   font-family: "Montserrat";
   font-weight: 500;
+  font-size: 16px;
   padding-left: 1rem;
 }
 
@@ -81,7 +81,7 @@ img {
   }
   .card {
     width: 20rem;
-    min-height: 35rem;
+    min-height: 36.5rem;
   }
   .card img {
     content: url("../img/image-product-mobile.jpg");
